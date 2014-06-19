@@ -8,17 +8,24 @@
 
 import UIKit
 
+// Test overriding property contents in PlayingCard (classes are in separate files)
+
 class ViewController: UIViewController {
                             
+    @IBOutlet var contentsLabel: UILabel
+ 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var pcard2:PlayingCard = PlayingCard (suit: "♥️",rank: 8)
+        var card2Befor = pcard2.contents
+        pcard2.rank = 10
+        contentsLabel.text = card2Befor + " " + pcard2.contents
     }
+    
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }

@@ -12,6 +12,8 @@
 		E42583531952B10E00A3F484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42583511952B10E00A3F484 /* Main.storyboard */; };
 		E42583551952B10E00A3F484 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42583541952B10E00A3F484 /* Images.xcassets */; };
 		E42583611952B10E00A3F484 /* OverrideProperty2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42583601952B10E00A3F484 /* OverrideProperty2Tests.swift */; };
+		E425836B1952B18F00A3F484 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E425836A1952B18F00A3F484 /* Card.swift */; };
+		E425836D1952B1D200A3F484 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E425836C1952B1D200A3F484 /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 		E425835A1952B10E00A3F484 /* OverrideProperty2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverrideProperty2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E425835F1952B10E00A3F484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E42583601952B10E00A3F484 /* OverrideProperty2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideProperty2Tests.swift; sourceTree = "<group>"; };
+		E425836A1952B18F00A3F484 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E425836C1952B1D200A3F484 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		E425836E1952B3C800A3F484 /* OverridePropertyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OverridePropertyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +80,9 @@
 		E425834A1952B10E00A3F484 /* OverrideProperty2 */ = {
 			isa = PBXGroup;
 			children = (
-				E425834D1952B10E00A3F484 /* AppDelegate.swift */,
+				E425836E1952B3C800A3F484 /* OverridePropertyPlayground.playground */,
+				E425836A1952B18F00A3F484 /* Card.swift */,
+				E425836C1952B1D200A3F484 /* PlayingCard.swift */,
 				E425834F1952B10E00A3F484 /* ViewController.swift */,
 				E42583511952B10E00A3F484 /* Main.storyboard */,
 				E42583541952B10E00A3F484 /* Images.xcassets */,
@@ -87,6 +94,7 @@
 		E425834B1952B10E00A3F484 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E425834D1952B10E00A3F484 /* AppDelegate.swift */,
 				E425834C1952B10E00A3F484 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -209,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42583501952B10E00A3F484 /* ViewController.swift in Sources */,
+				E425836B1952B18F00A3F484 /* Card.swift in Sources */,
+				E425836D1952B1D200A3F484 /* PlayingCard.swift in Sources */,
 				E425834E1952B10E00A3F484 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
