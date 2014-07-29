@@ -29,12 +29,18 @@ class PlayingCard: Card {
     }
     
     override var contents:String {
+/*
     get {
-        return PlayingCard.rankStrings()[self.rank]+self.suit
+        return super.contents
     }
     set{
-        super.contents = newValue
+        super.contents = PlayingCard.rankStrings()[self.rank]+self.suit
     }
+*/
+   didSet {
+     super.contents = PlayingCard.rankStrings()[self.rank]+self.suit
+    }
+    
     }
     
     init(suit s:String, rank r:Int) {
@@ -51,13 +57,13 @@ class PlayingCard: Card {
         
     }
     
-    class func rankStrings() -> String[] {
+    class func rankStrings() -> [String] {
         
         return  ["?", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
         
     }
     
-    class func validSuits() -> String[] {
+    class func validSuits() -> [String] {
         return ["♥️", "♦️", "♠️", "♣️"]
     }
     

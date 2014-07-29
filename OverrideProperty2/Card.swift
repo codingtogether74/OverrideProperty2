@@ -9,7 +9,7 @@
 import Foundation
 // A class representing  card.
 class Card{
-    var contents: String
+    var contents: String = ""
     var isChosen: Bool = false
     var isMatched:Bool = false
     
@@ -21,6 +21,5 @@ class Card{
     {
         return self.contents;
     }
-    
 }
 

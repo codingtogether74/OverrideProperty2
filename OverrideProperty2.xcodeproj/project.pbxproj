@@ -14,6 +14,9 @@
 		E42583611952B10E00A3F484 /* OverrideProperty2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42583601952B10E00A3F484 /* OverrideProperty2Tests.swift */; };
 		E425836B1952B18F00A3F484 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E425836A1952B18F00A3F484 /* Card.swift */; };
 		E425836D1952B1D200A3F484 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E425836C1952B1D200A3F484 /* PlayingCard.swift */; };
+		E443453C196C2F8E00593B52 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443453B196C2F8E00593B52 /* Vehicle.swift */; };
+		E443453E196C2FE700593B52 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443453D196C2FE700593B52 /* Car.swift */; };
+		E4434540196C301200593B52 /* SpeedLimitedCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443453F196C301200593B52 /* SpeedLimitedCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		E425836A1952B18F00A3F484 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E425836C1952B1D200A3F484 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		E425836E1952B3C800A3F484 /* OverridePropertyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OverridePropertyPlayground.playground; sourceTree = "<group>"; };
+		E443453B196C2F8E00593B52 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E443453D196C2FE700593B52 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E443453F196C301200593B52 /* SpeedLimitedCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLimitedCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				E425836E1952B3C800A3F484 /* OverridePropertyPlayground.playground */,
+				E443453F196C301200593B52 /* SpeedLimitedCar.swift */,
+				E443453D196C2FE700593B52 /* Car.swift */,
+				E443453B196C2F8E00593B52 /* Vehicle.swift */,
 				E425836A1952B18F00A3F484 /* Card.swift */,
 				E425836C1952B1D200A3F484 /* PlayingCard.swift */,
 				E425834F1952B10E00A3F484 /* ViewController.swift */,
@@ -217,8 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42583501952B10E00A3F484 /* ViewController.swift in Sources */,
+				E4434540196C301200593B52 /* SpeedLimitedCar.swift in Sources */,
 				E425836B1952B18F00A3F484 /* Card.swift in Sources */,
+				E443453E196C2FE700593B52 /* Car.swift in Sources */,
 				E425836D1952B1D200A3F484 /* PlayingCard.swift in Sources */,
+				E443453C196C2F8E00593B52 /* Vehicle.swift in Sources */,
 				E425834E1952B10E00A3F484 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +419,7 @@
 				E42583661952B10E00A3F484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E42583671952B10E00A3F484 /* Build configuration list for PBXNativeTarget "OverrideProperty2Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				E42583691952B10E00A3F484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

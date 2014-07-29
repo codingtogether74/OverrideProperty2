@@ -14,7 +14,7 @@ class Card{
         self.contents = contents
     }
     
-    func match(otherCards: Card[]) -> Int {
+    func match(otherCards: [Card]) -> Int {
         var score = 0
         for card in otherCards {
             if self.contents == card.contents {
@@ -69,13 +69,13 @@ class PlayingCard: Card {
         
     }
     
-    class func rankStrings() -> String[] {
+    class func rankStrings() -> [String] {
         
         return  ["?", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
         
     }
     
-    class func validSuits() -> String[] {
+    class func validSuits() -> [String] {
         return ["♥️", "♦️", "♠️", "♣️"]
     }
     
@@ -85,7 +85,7 @@ class PlayingCard: Card {
     }
     
     
-    override func match(otherCards: Card[]) -> Int {
+    override func match(otherCards: [Card]) -> Int {
         var score = 0
         var numMatches = 0
         
@@ -121,6 +121,43 @@ class PlayingCard: Card {
     }
 }
 
+class Vehicle {
+    var numberOfWheels: Int
+    var maxPassengers: Int
+    func description() -> String {
+        return "\(numberOfWheels) wheels; up to \(maxPassengers) passengers"
+    }
+    init() {
+        numberOfWheels = 0
+        maxPassengers = 1
+    }
+}
+
+class Car: Vehicle {
+    var speed: Double = 0.0
+    init() {
+        super.init()
+        maxPassengers = 5
+        numberOfWheels = 4
+    }
+    override func description() -> String {
+        return super.description() + "; "
+            + "traveling at \(speed) mph"
+    }
+}
+class SpeedLimitedCar: Car {
+    override var speed: Double  {
+    get {
+        return super.speed
+    }
+    set {
+        super.speed = min(newValue, 40.0)
+    }
+    }
+}
+let limitedCar = SpeedLimitedCar()
+limitedCar.speed = 60.0
+println("SpeedLimitedCar: \(limitedCar.description())")
 var card1:Card = Card(contents: "One")
 var card2:Card = Card(contents: "Two")
 var pcard1:PlayingCard = PlayingCard (suit: "♠️",rank: 8)

@@ -12,21 +12,20 @@ import UIKit
 
 class ViewController: UIViewController {
                             
-    @IBOutlet var contentsLabel: UILabel
+    @IBOutlet var contentsLabel: UILabel?
  
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var limitedCar = SpeedLimitedCar()
+        limitedCar.speed = 60.0
+        println("SpeedLimitedCar: \(limitedCar.description())")
         var pcard2:PlayingCard = PlayingCard (suit: "♥️",rank: 8)
-        var card2Befor = pcard2.contents
+        var card2Before = pcard2.contents
         pcard2.rank = 10
-        contentsLabel.text = card2Befor + " " + pcard2.contents
+        var card2After = pcard2.contents
+        contentsLabel!.text = card2Before + card2After
     }
-    
-    
-
-
-
 }
 
