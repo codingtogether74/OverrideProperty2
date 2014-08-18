@@ -93,11 +93,11 @@ class PlayingCard: Card {
         {
             for var i = 0; i < otherCards.count; i++ {
                 var card1:PlayingCard? = otherCards[i] as? PlayingCard
-                if card1
+                if card1 != nil
                 {
                     for var  j = i+1; j < otherCards.count; j++ {
                         var card2:PlayingCard? = otherCards[j] as? PlayingCard
-                        if card2
+                        if card2 != nil
                         {
                             // check for the same suit
                             if card1!.suit == card2!.suit {
@@ -135,7 +135,7 @@ class Vehicle {
 
 class Car: Vehicle {
     var speed: Double = 0.0
-    init() {
+    override init() {
         super.init()
         maxPassengers = 5
         numberOfWheels = 4
@@ -170,3 +170,25 @@ pcard1.contents
 pcard2.contents
 
 
+
+//=========
+class Accumulator {
+    var Sum = 0
+    func add(v : Int) {
+        Sum += v
+    }
+}
+var a = Accumulator()
+var array = [1,2,3,4]
+array.map(a.add)       // partially applies the method to "instance a".
+println(a.Sum)  // prints 10
+
+
+
+var x: Int! = 0
+x! = 2
+x!++
+
+
+
+ 

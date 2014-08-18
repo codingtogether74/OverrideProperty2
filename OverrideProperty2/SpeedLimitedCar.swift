@@ -15,7 +15,7 @@ class SpeedLimitedCar: Car {
         return super.speed
     }
     set {
-        super.speed = min(newValue, 40.0)
+        super.speed = Double(min(newValue, 40.0))
     }
     }
 }

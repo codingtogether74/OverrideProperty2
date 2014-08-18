@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import Foundation
 
 // Test overriding property contents in PlayingCard (classes are in separate files)
 
 class ViewController: UIViewController {
                             
     @IBOutlet var contentsLabel: UILabel?
- 
+  
+    struct Blog : Printable {
+        let id: Int = 30
+        let name: String = "mm"
+        let needsPassword : Bool = true
+        let url: NSURL = NSURL(string:"http://flickrtest1.userland.com/")
+        var description : String {
+            return "Blog { id = \(id), name = \(name), needsPassword = \(needsPassword), url = \(url)}"
+        }
+        
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +36,9 @@ class ViewController: UIViewController {
         var pcard2:PlayingCard = PlayingCard (suit: "♥️",rank: 8)
         var card2Before = pcard2.contents
         pcard2.rank = 10
-        var card2After = pcard2.contents
-        contentsLabel!.text = card2Before + card2After
+       var card2After = pcard2.contents
+//        contentsLabel!.text = card2Before + card2After
+        
     }
 }
 

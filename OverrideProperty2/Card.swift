@@ -9,7 +9,7 @@
 import Foundation
 // A class representing  card.
 class Card{
-    var contents: String = ""
+    var contents: String
     var isChosen: Bool = false
     var isMatched:Bool = false
     
@@ -17,9 +17,14 @@ class Card{
         self.contents = contents
     }
     
-    func description() ->String
-    {
-        return self.contents;
+    func match(otherCards: [Card]) -> Int {
+        var score = 0
+        for card in otherCards {
+            if self.contents == card.contents {
+                score = 1
+            }
+        }
+        return score
     }
 }
 

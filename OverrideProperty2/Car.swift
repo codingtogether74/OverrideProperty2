@@ -10,7 +10,7 @@ import Foundation
 
 class Car: Vehicle {
     var speed: Double = 0.0
-    init() {
+    override init() {
         super.init()
         maxPassengers = 5
         numberOfWheels = 4
