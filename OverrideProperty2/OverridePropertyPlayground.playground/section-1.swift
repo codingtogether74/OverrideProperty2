@@ -125,7 +125,7 @@ class Vehicle {
     var numberOfWheels: Int
     var maxPassengers: Int
     func description() -> String {
-        return "\(numberOfWheels) wheels; up to \(maxPassengers) passengers"
+        return " \(numberOfWheels) wheels; up to \(maxPassengers) passengers"
     }
     init() {
         numberOfWheels = 0
