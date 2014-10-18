@@ -17,7 +17,6 @@
 		E443453C196C2F8E00593B52 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443453B196C2F8E00593B52 /* Vehicle.swift */; };
 		E443453E196C2FE700593B52 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443453D196C2FE700593B52 /* Car.swift */; };
 		E4434540196C301200593B52 /* SpeedLimitedCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443453F196C301200593B52 /* SpeedLimitedCar.swift */; };
-		E456190B1992720700A38730 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456190A1992720700A38730 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		E443453B196C2F8E00593B52 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		E443453D196C2FE700593B52 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		E443453F196C301200593B52 /* SpeedLimitedCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLimitedCar.swift; sourceTree = "<group>"; };
-		E456190A1992720700A38730 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 			children = (
 				E425836E1952B3C800A3F484 /* OverridePropertyPlayground.playground */,
 				E443453F196C301200593B52 /* SpeedLimitedCar.swift */,
-				E456190A1992720700A38730 /* File.swift */,
 				E443453D196C2FE700593B52 /* Car.swift */,
 				E443453B196C2F8E00593B52 /* Vehicle.swift */,
 				E425836A1952B18F00A3F484 /* Card.swift */,
@@ -233,7 +230,6 @@
 				E425836B1952B18F00A3F484 /* Card.swift in Sources */,
 				E443453E196C2FE700593B52 /* Car.swift in Sources */,
 				E425836D1952B1D200A3F484 /* PlayingCard.swift in Sources */,
-				E456190B1992720700A38730 /* File.swift in Sources */,
 				E443453C196C2F8E00593B52 /* Vehicle.swift in Sources */,
 				E425834E1952B10E00A3F484 /* AppDelegate.swift in Sources */,
 			);
